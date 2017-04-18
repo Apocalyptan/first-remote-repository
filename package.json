@@ -1,0 +1,25 @@
+{
+  "name": "projekt-dark-souls",
+  "version": "1.0.0",
+  "description": "example grunt project",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apocalyptan/first-remote-repository.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Adam Rudny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Apocalyptan/first-remote-repository/issues"
+  },
+  "homepage": "https://github.com/Apocalyptan/first-remote-repository#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}
