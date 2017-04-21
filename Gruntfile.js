@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     	},
 
     	watch: {
-    		scripts: {
+    		sass: {
     			files: ['sass/*.sass'],
     			tasks: ['sass'],
     			options: {
@@ -39,6 +39,7 @@ module.exports = function(grunt) {
         		src : 'assets/css/*.css'
     			},
     		options: {
+                watchTask: true,
         		server: {
             		baseDir: "./"
         		}	

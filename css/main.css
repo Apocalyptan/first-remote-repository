@@ -5,8 +5,8 @@
   box-sizing: border-box; }
 
 /* ===
- * Generic
- * === */
+ Generic
+ @mixin == */
 body {
   font-family: "Lato";
   background-color: #3C4144;
@@ -23,8 +23,8 @@ a {
   text-decoration: none; }
 
 /* ===
- * Header
- * === */
+ Header
+ @mixin == */
 header {
   background-color: #27292b;
   text-align: center;
@@ -55,8 +55,8 @@ header {
       background-color: black; }
 
 /* ===
- * Jumbotron Section
- * === */
+ Jumbotron Section
+ @mixin == */
 section.jumbotron {
   background-image: url("https://www.gamewallpapers.com/wallpapers_slechte_compressie/01wallpapers/wallpaper_dark_souls_3_01_1280x720.jpg");
   width: 100%;
@@ -82,8 +82,8 @@ section.jumbotron {
       text-shadow: 3px 3px black; }
 
 /* ===
- * Perks Section
- * === */
+ Perks Section
+ @mixin == */
 section.perks {
   float: none;
   text-align: center;
@@ -109,8 +109,8 @@ section.perks {
   color: #2f2f87; }
 
 /* ===
- * Featuring Section
- * === */
+ Featuring Section
+ @mixin == */
 section.featuring {
   background-color: #27292b;
   padding: 15px;
@@ -123,8 +123,8 @@ section.featuring {
     text-align: justify; }
 
 /* ===
- * Gallery Section
- * === */
+ Gallery Section
+ @mixin == */
 @media (max-width: 767px) {
   section.gallery img {
     width: 100%;
@@ -158,14 +158,15 @@ section.featuring {
     background-color: black;
     color: #FFF; }
     section.gallery .fa:hover {
-      background-color: #181a1b;
+      background-color: #1a1919;
       transition: 0.5s;
       cursor: pointer; }
     section.gallery .fa:active {
-      background-color: #798086; } }
+      background-color: #807f7f; } }
+
 /* ===
- * Gods Section
- * === */
+ Gods Section
+ @mixin == */
 section.gods {
   margin-top: 80px;
   text-align: center; }
@@ -192,8 +193,8 @@ section.gods {
       display: block; }
 
 /* ===
- * Imagesection Section
- * === */
+ Imagesection Section
+ @mixin == */
 section.imagesection {
   background-color: #27292b;
   margin-top: 50px;
@@ -219,8 +220,8 @@ section.imagesection {
     text-align: justify; }
 
 /* ===
- * Stats Section
- * === */
+ Stats Section
+ @mixin == */
 section.stats {
   text-align: center;
   padding: 20px;
@@ -236,8 +237,8 @@ section.stats {
     color: #ddc478; }
 
 /* ===
- * Footer
- * === */
+ Footer
+ @mixin == */
 footer {
   background-color: #27292b;
   text-align: center; }
@@ -259,11 +260,11 @@ footer {
     background-color: black;
     color: #FFF; }
     footer .fa:hover {
-      background-color: #181a1b;
+      background-color: #1a1919;
       transition: 0.5s;
       cursor: pointer; }
     footer .fa:active {
-      background-color: #798086; }
+      background-color: #807f7f; }
   footer strong {
     background-color: #1f2021;
     padding: 20px;
@@ -274,18 +275,17 @@ footer {
     display: block; }
 
 /* ======
- * Media Tablet
- * ====== */
+ Media Tablet
+ @mixin ===== */
 @media (min-width: 768px) and (max-width: 1199px) {
   /* ===
-   * Generic
-   * === */
+	 Generic
+	 @mixin == */
   section > .container {
     text-align: center; }
-
   /* ===
-   * Header
-   * === */
+	 Header
+	 @mixin == */
   header {
     height: 85px; }
     header img {
@@ -306,10 +306,9 @@ footer {
         color: #FFF;
         text-transform: uppercase;
         border: none; }
-
   /* ===
-   * Jumbotron Section
-   * === */
+	 Jumbotron Section
+	 @mixin == */
   section.jumbotron {
     height: 100vh; }
     section.jumbotron .slogan {
@@ -321,16 +320,15 @@ footer {
       width: 150px;
       font-size: 60px;
       line-height: 150px; }
-
   /* ===
-   * Gallery Section
-   * === */
+	 Gallery Section
+	 @mixin == */
   section.gallery {
     /* Nie wiem czy poprawnie zrobilem tak jak jest na gorze - w kazdym razie dziala :)
-     * section.gallery:last-child 
-     * 	div.row:last-child 
-     * 		div.col-s-12:last-child
-     * 			margin-bottom: 0 */ }
+			section.gallery:last-child
+				div.row:last-child
+					div.col-s-12:last-child
+						margin-bottom: 0 */ }
     section.gallery:last-child:last-child:last-child {
       margin-bottom: 0; }
     section.gallery img {
@@ -366,15 +364,14 @@ footer {
       background-color: black;
       color: #FFF; }
       section.gallery .fa:hover {
-        background-color: #181a1b;
+        background-color: #1a1919;
         transition: 0.5s;
         cursor: pointer; }
       section.gallery .fa:active {
-        background-color: #798086; }
-
+        background-color: #807f7f; }
   /* ===
-   * Gods Section
-   * === */
+	 Gods Section
+	 @mixin == */
   section.gods {
     margin-top: 150px; }
     section.gods .col-m-6 {
@@ -383,10 +380,9 @@ footer {
       width: 100%; }
     section.gods .description {
       font-size: 36px; }
-
   /* ===
-   * Imagesection Section
-   * === */
+	 Imagesection Section
+	 @mixin == */
   section.imagesection .col-m-6 {
     padding: 10px; }
   section.imagesection img {
@@ -398,13 +394,14 @@ footer {
     text-align: center;
     padding-left: 20px;
     font-size: 40px; } }
+
 /* ======
- * Media Desktop
- * ====== */
+ Media Desktop
+ @mixin ===== */
 @media (min-width: 1200px) {
   /* ===
-   * Header
-   * === */
+	 Header
+	 @mixin == */
   header {
     height: 85px; }
     header img {
@@ -427,36 +424,32 @@ footer {
           display: block;
           text-transform: uppercase;
           border: none; }
-
   /* ===
-   * Jumbotron Section
-   * === */
+	 Jumbotron Section
+	 @mixin == */
   section.jumbotron .slogan {
     float: right;
     max-width: 80%;
     margin-top: 25vh;
     font-size: 30px;
     padding: 5%; }
-
   /* ===
-   * Perks Section
-   * === */
+	 Perks Section
+	 @mixin == */
   section.perks .fa {
     height: 150px;
     width: 150px;
     font-size: 60px;
     line-height: 150px; }
-
   /* ===
-   * Featuring Section
-   * === */
+	 Featuring Section
+	 @mixin == */
   section.featuring h2 {
     font-size: 40px;
     text-transform: uppercase; }
-
   /* ===
-   * Gallery Section
-   * === */
+	 Gallery Section
+	 @mixin == */
   section.gallery img {
     width: 100%;
     height: 250px; }
@@ -488,15 +481,14 @@ footer {
     background-color: black;
     color: #FFF; }
     section.gallery .fa:hover {
-      background-color: #181a1b;
+      background-color: #1a1919;
       transition: 0.5s;
       cursor: pointer; }
     section.gallery .fa:active {
-      background-color: #798086; }
-
+      background-color: #807f7f; }
   /* ===
-   * Gods Section
-   * === */
+	 Gods Section
+	 @mixin == */
   section.gods {
     margin-top: 100px; }
     section.gods img {
@@ -508,10 +500,9 @@ footer {
       position: relative;
       height: 250px;
       width: 250px; }
-
   /* ===
-   * Imagesection Section
-   * === */
+	 Imagesection Section
+	 @mixin == */
   section.imagesection {
     margin-top: 50px; }
     section.imagesection img {
@@ -530,10 +521,9 @@ footer {
         padding-top: 12px; }
     section.imagesection .col-8:last-child {
       padding-top: 40px; }
-
   /* ===
-   * Stats Section
-   * === */
+	 Stats Section
+	 @mixin == */
   section.stats .col-offset-2 {
     margin-left: 16.66%; }
   section.stats h2 {
@@ -542,3 +532,5 @@ footer {
     color: #ddc478;
     margin-top: 20px;
     padding-top: 20px; } }
+
+/*# sourceMappingURL=main.css.map */
